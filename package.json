@@ -2,7 +2,12 @@
   "name": "number-converter-hook",
   "version": "0.0.1",
   "description": "Methods for converting value to string from number and to number from string using React.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/useConverter.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -d --outDir ./dist"
@@ -19,12 +24,21 @@
     "input",
     "converter"
   ],
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
   "author": "Daniil Grishkin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rocetspace/number-converter-hook/issues"
   },
   "homepage": "https://github.com/rocetspace/number-converter-hook#readme",
+  "peerDependencies": {
+    "react": "*"
+  },
   "devDependencies": {
     "@types/react": "^17.0.0",
     "react": "^17.0.1",

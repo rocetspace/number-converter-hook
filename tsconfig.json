@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "allowJs": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "lib": ["ES2015", "DOM"]
+    },
+    "include": [
+        "./index.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
